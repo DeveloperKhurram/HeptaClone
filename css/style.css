@@ -1,5 +1,7 @@
 @import url("header.css");
 @import url("hero-section.css");
+@import url("intro-section.css");
+@import url("slider.css");
 
 :root {
   --bg-color: #fff;
@@ -8,7 +10,7 @@
   --text-color: #6c757d;
   --light-text-color: rgba(255, 255, 255, 0.5);
 
-  --hero-gradient: linear-gradient(#8c898928, #8c898928);
+  --hero-gradient: linear-gradient(to right, #bab04744, #b8781e5e);
 
   --hover-border: 2px solid #fff;
   --border-bottom: 2px solid rgba(255, 255, 255, 0.1);
@@ -27,7 +29,6 @@ body {
   font-weight: 200;
   font-size: 1.8rem;
   line-height: 1.8;
-  color: var(--text-color);
 }
 ::selection {
   color: var(--bg-color);
@@ -47,4 +48,42 @@ a {
 }
 a:hover {
   text-decoration: none;
+}
+.section {
+  padding: 4rem 0;
+}
+
+h1,
+h2,
+h3 {
+  color: #000;
+  font-family: "Abril Fatface", times, serif;
+}
+
+.bg-light {
+  position: relative;
+  overflow: hidden;
+  background: #65c0ba !important;
+}
+
+.bg-light:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 400px;
+  width: 150%;
+  left: 50%;
+  background: #fff;
+  transform: rotate(-4deg) translateX(-50%) translateY(-100%);
+  -moz-transform: rotate(-4deg) translateX(-50%) translateY(-100%);
+  -o-transform: rotate(-4deg) translateX(-50%) translateY(-100%);
+}
+
+.bg-light-2 {
+  background: #fafafa;
+  border-top: 1px solid #e0e0e0;
+}
+
+.icon-img {
+  width: 7rem;
 }

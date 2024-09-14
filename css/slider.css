@@ -1,0 +1,177 @@
+.slider-section {
+    position: relative;
+  }
+
+.owl-carousel .owl-item {
+    opacity: .4;
+  }
+  
+  .owl-carousel .owl-item.active {
+    opacity: 1;
+  }
+  
+  .owl-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+  }
+  
+  .owl-carousel .owl-nav .owl-prev,
+  .owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-top: -10px;
+  }
+  
+  .owl-carousel .owl-nav .owl-prev:hover, .owl-carousel .owl-nav .owl-prev:focus, .owl-carousel .owl-nav .owl-prev:active,
+  .owl-carousel .owl-nav .owl-next:hover,
+  .owl-carousel .owl-nav .owl-next:focus,
+  .owl-carousel .owl-nav .owl-next:active {
+    outline: none;
+  }
+  
+  .owl-carousel .owl-nav .owl-prev span:before,
+  .owl-carousel .owl-nav .owl-next span:before {
+    font-size: 40px;
+  }
+  
+  .owl-carousel .owl-nav .owl-prev {
+    left: 30px !important;
+  }
+  
+  .owl-carousel .owl-nav .owl-next {
+    right: 30px !important;
+  }
+  
+  .owl-carousel .owl-dots {
+    text-align: center;
+  }
+  
+  .owl-carousel .owl-dots .owl-dot {
+    border-width: 2px !important;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    border-radius: 50%;
+  }
+  
+  .owl-carousel.home-slider {
+    z-index: 1;
+    position: relative;
+  }
+  
+  .owl-carousel.home-slider .owl-nav {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+  }
+  
+  .owl-carousel.home-slider .owl-nav button {
+    color: #fff;
+  }
+  
+  .owl-carousel.home-slider:focus .owl-nav, .owl-carousel.home-slider:hover .owl-nav {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .owl-carousel.home-slider .slider-item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: calc(100vh - 117px);
+    min-height: 700px;
+    position: relative;
+  }
+  
+  .owl-carousel.home-slider .owl-dots {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+  }
+  
+  .owl-carousel.home-slider .owl-dots .owl-dot {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    outline: none !important;
+    position: relative;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    background: #fff;
+  }
+  
+  .owl-carousel.home-slider .owl-dots .owl-dot.active {
+    border: 2px solid white;
+    background: none;
+  }
+  
+  .owl-carousel.major-caousel {
+    -webkit-box-shadow: 0 10px 70px -10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 70px -10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .owl-carousel.major-caousel .owl-stage-outer {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  .owl-carousel.major-caousel .owl-stage-outer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .owl-carousel.major-caousel .slider-item {
+    height: inherit;
+    min-height: inherit;
+  }
+  
+  .owl-carousel.major-caousel .slider-item img {
+    margin-bottom: 0;
+  }
+  
+  .owl-carousel.major-caousel .owl-nav {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .owl-carousel.major-caousel .owl-nav .owl-prev, .owl-carousel.major-caousel .owl-nav .owl-next {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    color: #495057;
+  }
+  
+  .owl-carousel.major-caousel .owl-nav .owl-prev:hover, .owl-carousel.major-caousel .owl-nav .owl-prev:focus, .owl-carousel.major-caousel .owl-nav .owl-next:hover, .owl-carousel.major-caousel .owl-nav .owl-next:focus {
+    color: #6c757d;
+    outline: none;
+  }
+  
+  .owl-carousel.major-caousel .owl-nav .owl-prev.disabled, .owl-carousel.major-caousel .owl-nav .owl-next.disabled {
+    color: #dee2e6;
+  }
+  
+  .owl-carousel.major-caousel .owl-nav .owl-prev {
+    left: -60px !important;
+  }
+  
+  .owl-carousel.major-caousel .owl-nav .owl-next {
+    right: -60px !important;
+  }
+  
+  .owl-carousel.major-caousel .owl-dots {
+    bottom: 50px !important;
+  }
+  
+  @media (max-width: 991.98px) {
+    .owl-carousel.major-caousel .owl-dots {
+      bottom: 10px !important;
+    }
+  }

@@ -4,15 +4,15 @@
 }
 .hero-section-hotel {
   height: 70vh;
-  background: var(--hero-gradient), url("images/slider-4.jpg");
+  background: var(--hero-gradient), url("../images/slider-4.jpg");
 }
 .hero-section-about {
   height: 70vh;
-  background: var(--hero-gradient), url("images/slider-2.jpg");
+  background: var(--hero-gradient), url("../images/slider-2.jpg");
 }
 .hero-section-gallery {
   height: 70vh;
-  background: var(--hero-gradient), url("images/slider-5.jpg");
+  background: var(--hero-gradient), url("../images/slider-5.jpg");
 }
 
 .hero {
@@ -56,4 +56,42 @@
   left: 0;
   bottom: 0;
   right: 0;
+}
+
+
+.hero .heading {
+  font-size: 8rem;
+  font-family: "Abril Fatface", times, serif;
+  color: var(--bg-color);
+  line-height: 1;
+  font-weight: bold;
+}
+
+@media (max-width: 991.98px) {
+  .hero .heading {
+    font-size: 4rem;
+  }
+}
+
+.hero .sub-heading {
+  font-size: 3rem;
+  font-weight: 200;
+  color: var(--bg-color);
+  line-height: 1.5;
+}
+
+@media (max-width: 991.98px) {
+  .hero .sub-heading {
+    font-size: 18px;
+  }
+}
+
+.hero .sub-heading a {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.hero .sub-heading a:hover {
+  color: white;
+  border-bottom: 2px solid white;
 }
