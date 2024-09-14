@@ -1,0 +1,50 @@
+@import url("header.css");
+@import url("hero-section.css");
+
+:root {
+  --bg-color: #fff;
+  --selection-bg-color: #65c0ba;
+  --heading-color: #000;
+  --text-color: #6c757d;
+  --light-text-color: rgba(255, 255, 255, 0.5);
+
+  --hero-gradient: linear-gradient(#8c898928, #8c898928);
+
+  --hover-border: 2px solid #fff;
+  --border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background: var(--bg-color);
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 200;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: var(--text-color);
+}
+::selection {
+  color: var(--bg-color);
+  background: var(--selection-bg-color);
+}
+ul {
+  list-style: none;
+}
+a {
+  color: var(--bg-color);
+  text-decoration: none;
+  transition: 0.3s all ease;
+  -webkit-transition: 0.3s all ease;
+  -moz-transition: 0.3s all ease;
+  -ms-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+}
+a:hover {
+  text-decoration: none;
+}
