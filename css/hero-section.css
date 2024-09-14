@@ -1,6 +1,6 @@
 .hero-section-home {
   height: 100vh;
-  background: var(--hero-gradient), url("/images/slider-1.jpg");
+  background: var(--hero-gradient), url("../images/slider-1.jpg");
 }
 .hero-section-hotel {
   height: 70vh;
