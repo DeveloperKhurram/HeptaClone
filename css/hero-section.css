@@ -10,9 +10,11 @@
   
 }
 .hero-section-about {
+  height: 93vh;
   background: var(--hero-gradient), url("../images/slider-2.jpg");
 }
 .hero-section-gallery {
+  height: 93vh;
   background: var(--hero-gradient), url("../images/slider-5.jpg");
 }
 
