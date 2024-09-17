@@ -331,3 +331,129 @@ blockquote p {
     border-color: rgb(101, 192, 186);
   }
 }
+
+.content-section {
+  padding: 6.4rem 0 3.2rem;
+}
+
+.pagination-list ul {
+  display: flex;
+  align-items: center;
+}
+
+.page-list {
+  /* margin: 0 0.8rem; */
+  display: flex;
+  padding-right: 1.2rem;
+  gap: 1.2rem;
+}
+
+.page-link a {
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  color: var(--selection-bg-color);
+  line-height: 50px;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.page-link.active a {
+  color: var(--bg-color);
+  background: var(--selection-bg-color);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 7px 0px;
+  z-index: 1;
+}
+
+.page-link a:hover {
+  color: var(--bg-color);
+  background: var(--selection-bg-color);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 7px 0px;
+  z-index: 1;
+}
+
+.sidebar {
+  padding: 0.8rem 0 0;
+}
+
+.search-box,
+.popular-post, .categories {
+  background: #fff;
+  padding: 3rem;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  border: 0.1rem solid var(--text-color);
+  padding: 0.6rem 1.2rem;
+}
+
+.search-bar input {
+  width: 80%;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  font-size: 1.6rem;
+}
+
+.popular-post h4 {
+  font-size: 1.8rem;
+  color: #000;
+}
+
+.popular {
+  display: flex;
+}
+
+.popular {
+  .body {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 0;
+    padding-left: 1.2rem;
+  }
+
+  & a img {
+    width: 10.6rem;
+    height: 100%;
+  }
+
+  & span {
+    color: #adb5bd;
+    font-size: 1.3rem;
+    line-height: 0;
+  }
+
+  & h2 a {
+    font-size: 1.6rem;
+    color: #000;
+    line-height: 0.1;
+  }
+}
+
+.category{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(233, 236, 239);
+}
+
+.category a {
+  font-size: 1.8rem;
+  color: var(--selection-bg-color);
+}
+
+.category span{
+  font-size: 1.8rem;
+  color: #6c757d;
+}

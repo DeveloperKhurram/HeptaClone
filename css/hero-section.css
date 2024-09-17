@@ -1,5 +1,3 @@
-
-
 .hero-section-home {
   height: 100vh;
   background: var(--hero-gradient), url("../images/slider-1.jpg");
@@ -7,7 +5,6 @@
 .hero-section-hotel {
   height: 93vh;
   background: var(--hero-gradient), url("../images/slider-4.jpg");
-  
 }
 .hero-section-about {
   height: 93vh;
@@ -16,6 +13,11 @@
 .hero-section-gallery {
   height: 93vh;
   background: var(--hero-gradient), url("../images/slider-5.jpg");
+}
+.hero-section-news {
+  height: 93vh;
+  background: var(--hero-gradient),
+    url("https://preview.colorlib.com/theme/hepta/images/hero_3.jpg.webp");
 }
 
 .hero {
