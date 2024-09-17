@@ -266,3 +266,68 @@ blockquote p {
     border-bottom: 0.1rem solid #fff;
   }
 }
+
+.bg-pattern {
+  background: #e9ecef;
+}
+
+.outline {
+  font-size: 1.5rem;
+  color: #212529;
+  background-color: transparent;
+  border: 0.1rem solid var(--selection-bg-color);
+  padding: 1rem 3rem;
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  border-width: 0.2rem;
+  line-height: 1.5;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  -webkit-transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -moz-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  -ms-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+
+  &:active {
+    background-image: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(70, 172, 165);
+    border-color: rgb(67, 163, 156);
+  }
+
+  &:hover {
+    background: rgb(101, 192, 186);
+    color: rgb(255, 255, 255);
+    background-color: rgb(74, 181, 174);
+    border-color: rgb(70, 172, 165);
+    text-decoration: none;
+  }
+
+  &:focus {
+    text-decoration: none;
+    outline: none;
+    box-shadow: rgba(101, 192, 186, 0.5) 0px 0px 0px 0.2rem;
+  }
+
+  &:disabled {
+    opacity: 0.65;
+    color: rgb(33, 37, 41);
+    background-color: rgb(101, 192, 186);
+    border-color: rgb(101, 192, 186);
+  }
+}
