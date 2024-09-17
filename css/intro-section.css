@@ -1,38 +1,49 @@
 .btn-play .icon {
-    width: 50px;
-    height: 50px;
-    position: relative;
-    border: 2px solid #e6e6e6;
-    border-radius: 50%;
-    -webkit-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    transition: .3s all ease;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border: 2px solid #e6e6e6;
+  border-radius: 50%;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.btn-play .icon > .fa-play {
+  color: var(--selection-bg-color);
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.btn-play .text {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  color: var(--selection-bg-color);
+  padding-left: 3rem;
+}
+
+.btn-play:hover .icon {
+  border-color: #1a1a1a;
+}
+
+.btn-play:hover .icon .fa-play {
+  color: #000;
+}
+
+.intro-section .text-group {
+  padding: 0 4.8rem 0 6.4rem;
+}
+
+@media (width <= 768px) {
+  .intro-section .text-group {
+    padding: 1.2rem;
   }
-  
-  .btn-play .icon > .fa-play {
-    color: var(--selection-bg-color);
-    position: absolute;
-    top: 50%;
-    left: 55%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    -webkit-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    transition: .3s all ease;
-  }
-  
-  .btn-play .text {
-    text-transform: uppercase;
-    letter-spacing: .1em;
-    font-weight: bold;
-    color: var(--selection-bg-color);
-  }
-  
-  .btn-play:hover .icon {
-    border-color: #1a1a1a;
-  }
-  
-  .btn-play:hover .icon .fa-play {
-    color: #000;
-  }
+}

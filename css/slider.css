@@ -1,177 +1,142 @@
 .slider-section {
-    position: relative;
+  width: 100%;
+  position: relative;
+
+  z-index: 3000;
+}
+
+.carousel {
+  /* margin-bottom: 40px; */
+  z-index: 900;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 55rem;
+  aspect-ratio: 16/9;
+
+}
+
+.carousel-item img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  border-radius: -0.8rem;
+  -webkit-border-radius: -0.8rem;
+  -moz-border-radius: -0.8rem;
+  -ms-border-radius: -0.8rem;
+  -o-border-radius: -0.8rem;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.carousel-caption h5 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--selection-bg-color);
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  color: var(--selection-bg-color);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: transparent !important;
+
+  /* z-index: 2001; */
+}
+
+@media (width <= 320px) {
+  .carousel-control-prev, .carousel-control-next {
+    display: none;
+  }
+}
+
+.carousel-control-prev {
+  position: absolute;
+  left: -2rem !important;
+}
+
+.carousel-control-next {
+  position: absolute;
+  right: -2rem !important;
+}
+
+.carousel-indicators button {
+  background-color: #fff !important;
+  width: 1rem !important;
+  height: 1rem !important;
+  border: 0.1rem solid transparent !important;
+  border-radius: 50% !important;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  -ms-border-radius: 50% !important;
+  -o-border-radius: 50% !important;
+  margin-right: 1.2rem !important;
+
+  opacity: 1 !important;
+}
+
+.carousel-indicators .active {
+  border: 0.1rem solid #fff !important;
+  background-color: transparent !important;
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 20rem;
   }
 
-.owl-carousel .owl-item {
-    opacity: .4;
+  .carousel-caption h5 {
+    font-size: 1.5rem;
   }
-  
-  .owl-carousel .owl-item.active {
-    opacity: 1;
+
+  .carousel-caption p {
+    font-size: 1rem;
+
+    color: hsl(0, 100%, 50%);
   }
-  
-  .owl-carousel .owl-nav {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-  }
-  
-  .owl-carousel .owl-nav .owl-prev,
-  .owl-carousel .owl-nav .owl-next {
-    position: absolute;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    margin-top: -10px;
-  }
-  
-  .owl-carousel .owl-nav .owl-prev:hover, .owl-carousel .owl-nav .owl-prev:focus, .owl-carousel .owl-nav .owl-prev:active,
-  .owl-carousel .owl-nav .owl-next:hover,
-  .owl-carousel .owl-nav .owl-next:focus,
-  .owl-carousel .owl-nav .owl-next:active {
-    outline: none;
-  }
-  
-  .owl-carousel .owl-nav .owl-prev span:before,
-  .owl-carousel .owl-nav .owl-next span:before {
-    font-size: 40px;
-  }
-  
-  .owl-carousel .owl-nav .owl-prev {
-    left: 30px !important;
-  }
-  
-  .owl-carousel .owl-nav .owl-next {
-    right: 30px !important;
-  }
-  
-  .owl-carousel .owl-dots {
-    text-align: center;
-  }
-  
-  .owl-carousel .owl-dots .owl-dot {
-    border-width: 2px !important;
-    width: 10px;
-    height: 10px;
-    margin: 5px;
-    border-radius: 50%;
-  }
-  
-  .owl-carousel.home-slider {
-    z-index: 1;
-    position: relative;
-  }
-  
-  .owl-carousel.home-slider .owl-nav {
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    transition: .3s all ease;
-  }
-  
-  .owl-carousel.home-slider .owl-nav button {
-    color: #fff;
-  }
-  
-  .owl-carousel.home-slider:focus .owl-nav, .owl-carousel.home-slider:hover .owl-nav {
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  .owl-carousel.home-slider .slider-item {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: calc(100vh - 117px);
-    min-height: 700px;
-    position: relative;
-  }
-  
-  .owl-carousel.home-slider .owl-dots {
-    position: absolute;
-    bottom: 100px;
-    width: 100%;
-  }
-  
-  .owl-carousel.home-slider .owl-dots .owl-dot {
-    width: 10px;
-    height: 10px;
-    margin: 5px;
-    border-radius: 50%;
-    border: 2px solid transparent;
-    outline: none !important;
-    position: relative;
-    -webkit-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    transition: .3s all ease;
-    background: #fff;
-  }
-  
-  .owl-carousel.home-slider .owl-dots .owl-dot.active {
-    border: 2px solid white;
-    background: none;
-  }
-  
-  .owl-carousel.major-caousel {
-    -webkit-box-shadow: 0 10px 70px -10px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 10px 70px -10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .owl-carousel.major-caousel .owl-stage-outer {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-  }
-  
-  .owl-carousel.major-caousel .owl-stage-outer {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  
-  .owl-carousel.major-caousel .slider-item {
-    height: inherit;
-    min-height: inherit;
-  }
-  
-  .owl-carousel.major-caousel .slider-item img {
-    margin-bottom: 0;
-  }
-  
-  .owl-carousel.major-caousel .owl-nav {
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  .owl-carousel.major-caousel .owl-nav .owl-prev, .owl-carousel.major-caousel .owl-nav .owl-next {
-    -webkit-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    transition: .3s all ease;
-    color: #495057;
-  }
-  
-  .owl-carousel.major-caousel .owl-nav .owl-prev:hover, .owl-carousel.major-caousel .owl-nav .owl-prev:focus, .owl-carousel.major-caousel .owl-nav .owl-next:hover, .owl-carousel.major-caousel .owl-nav .owl-next:focus {
-    color: #6c757d;
-    outline: none;
-  }
-  
-  .owl-carousel.major-caousel .owl-nav .owl-prev.disabled, .owl-carousel.major-caousel .owl-nav .owl-next.disabled {
-    color: #dee2e6;
-  }
-  
-  .owl-carousel.major-caousel .owl-nav .owl-prev {
-    left: -60px !important;
-  }
-  
-  .owl-carousel.major-caousel .owl-nav .owl-next {
-    right: -60px !important;
-  }
-  
-  .owl-carousel.major-caousel .owl-dots {
-    bottom: 50px !important;
-  }
-  
-  @media (max-width: 991.98px) {
-    .owl-carousel.major-caousel .owl-dots {
-      bottom: 10px !important;
-    }
-  }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0)
+    contrast(100%);
+  /* This makes the arrow white; adjust `invert()` and `brightness()` to get different colors */
+
+  font-size: 3.2rem !important;
+}
+
+.carousel-control-prev-icon {
+  filter: invert(31%) sepia(96%) saturate(6589%) hue-rotate(8deg)
+    brightness(94%) contrast(101%);
+  /* Adjust this filter to get your preferred color for the 'prev' icon (e.g., red) */
+}
+
+.carousel-control-next-icon {
+  filter: invert(55%) sepia(18%) saturate(5707%) hue-rotate(190deg)
+    brightness(86%) contrast(92%);
+  /* Adjust this filter to get your preferred color for the 'next' icon (e.g., blue) */
+}

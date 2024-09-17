@@ -6,8 +6,10 @@
 :root {
   --bg-color: #fff;
   --selection-bg-color: #65c0ba;
+  --bg-footer: #1a1a1a;
   --heading-color: #000;
   --text-color: #6c757d;
+  --date-color: #ced4da;
   --light-text-color: rgba(255, 255, 255, 0.5);
 
   --hero-gradient: linear-gradient(to right, #bab04744, #b8781e5e);
@@ -29,6 +31,7 @@ body {
   font-weight: 200;
   font-size: 1.8rem;
   line-height: 1.8;
+  color: var(--text-color);
 }
 ::selection {
   color: var(--bg-color);
@@ -59,6 +62,12 @@ h3 {
   color: #000;
   font-family: "Abril Fatface", times, serif;
 }
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
 
 .bg-light {
   position: relative;
@@ -86,4 +95,174 @@ h3 {
 
 .icon-img {
   width: 7rem;
+}
+
+:is(.info-section, .slider-section, .blog-section, .news-section) .lead {
+  font-size: clamp(1.6rem, 1.6vw, 2rem);
+  margin: 0 0 1.6rem;
+}
+
+:is(.slider-section, .blog-section, .testimonials-section) .heading {
+  font-size: clamp(3.2rem, 6.5vw, 7rem);
+  margin: 4.8rem 0;
+}
+
+.blog-section {
+  /* padding: -1.5rem 4.8rem; */
+
+  padding: 50rem 0 12.6rem;
+  margin: -50rem 0 0;
+}
+
+@media (width <= 1024px) {
+  .blog-section {
+    padding: 40rem 0 12.6rem;
+    margin: -40rem 0 0;
+  }
+}
+
+@media (width <= 7687px) {
+  .blog-section {
+    padding: 20rem 0 12.6rem;
+    margin: -20rem 0 0;
+  }
+}
+
+.blog-section .lead {
+  color: var(--bg-color);
+}
+
+.post-body {
+  padding: 1rem 3rem;
+  background: var(--bg-color);
+
+  & span {
+    color: var(--date-color);
+    text-transform: uppercase;
+    font-size: 1.8rem;
+  }
+
+  & h2 a {
+    font-size: 2.6rem;
+    color: var(--heading-color);
+  }
+
+  & p {
+    font-size: 1, 8;
+  }
+}
+
+.post-context {
+  margin: 0 0.8rem;
+}
+blockquote p {
+  font-size: 2rem;
+}
+
+.person-image {
+  width: 7rem;
+  height: 7rem;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 2.4rem 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+blockquote p {
+  font-style: italic;
+  font-size: 2rem;
+  padding: 0 3.2rem 0 0;
+}
+.news-section .lead {
+  margin: 2rem 0 0;
+  & a {
+    font-size: 2rem 0 0.4rem;
+    color: var(--heading-color);
+  }
+}
+
+@media (width >= 1280px) {
+  .news-section {
+    padding: 13rem;
+  }
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+
+  & ion-icon {
+    color: var(--selection-bg-color);
+  }
+}
+.footer-section {
+  background: var(--bg-footer);
+  padding: 12.6rem 0;
+
+  & h3 {
+    font-size: 1.8rem;
+    color: var(--bg-color);
+  }
+
+  & .list-unstyled li a {
+    color: #ffffffb3;
+  }
+
+  & p span,
+  p {
+    color: #ffffff80;
+  }
+
+  & .d-block {
+    color: #fff;
+  }
+}
+
+.social-section {
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+
+  gap: 3.2rem;
+}
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2.4rem;
+}
+
+.form-group {
+  /* background: #000; */
+  display: flex;
+  border-bottom: 0.1rem solid #333;
+  padding-bottom: 0.4rem;
+  & .fa-paper-plane {
+    color: var(--bg-color);
+  }
+
+  & input,
+  input:focus {
+    background: var(--bg-footer);
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: var(--text-color);
+  }
+
+  &:focus-within {
+    border-bottom: 0.1rem solid #fff;
+  }
 }
