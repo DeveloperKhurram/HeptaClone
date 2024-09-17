@@ -383,7 +383,8 @@ blockquote p {
 }
 
 .search-box,
-.popular-post, .categories {
+.popular-post,
+.categories {
   background: #fff;
   padding: 3rem;
 }
@@ -405,7 +406,7 @@ blockquote p {
 }
 
 .popular-post h4 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #000;
 }
 
@@ -419,29 +420,29 @@ blockquote p {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    gap: 0;
-    padding-left: 1.2rem;
+    padding-left: 0.4rem;
   }
 
   & a img {
     width: 10.6rem;
     height: 100%;
+    flex: 1 0 0;
   }
 
   & span {
     color: #adb5bd;
     font-size: 1.3rem;
-    line-height: 0;
+    line-height: 1.2;
   }
 
   & h2 a {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     color: #000;
-    line-height: 0.1;
+    line-height: 0;
   }
 }
 
-.category{
+.category {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -453,7 +454,7 @@ blockquote p {
   color: var(--selection-bg-color);
 }
 
-.category span{
+.category span {
   font-size: 1.8rem;
   color: #6c757d;
 }
