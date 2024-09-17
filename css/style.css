@@ -458,3 +458,64 @@ blockquote p {
   font-size: 1.8rem;
   color: #6c757d;
 }
+
+.contact-section {
+  padding: 3.2rem;
+}
+
+.contact-section .contact .heading {
+  display: block;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  color: var(--selection-bg-color);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contact-section .contact .content {
+  font-weight: 200;
+  font-size: 3rem;
+  color: #000;
+  font-family: "Abril Fatface", times, serif;
+  word-break: break-all;
+  text-align: end;
+}
+
+.contact-box {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background: #fff;
+  padding: 3rem;
+}
+
+.contact-box .group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact-box .group :is(input, textarea) {
+  border: 0.2rem solid #ccc;
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+}
+
+.contact-box
+  .group
+  :is(input:focus, input:active, textarea:focus, textarea:active) {
+  border: 0.2rem solid var(--selection-bg-color);
+  outline: none;
+  box-shadow: none;
+  padding: 0.4rem 1.2rem 0 0;
+}
+
+.contact-box .outline {
+  margin: 3.2rem 0 0 0;
+  width: 60%;
+  text-transform: capitalize;
+  font-size: 1rem;
+  padding: 0.4rem 0.8rem;
+}
