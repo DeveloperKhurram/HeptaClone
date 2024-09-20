@@ -1,6 +1,7 @@
 .hero-section-home {
   height: 100vh;
   background: var(--hero-gradient), url("../images/slider-1.jpg");
+
 }
 .hero-section-hotel {
   height: 93vh;
@@ -24,9 +25,13 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
   display: grid;
   place-items: center;
+  transition: background-image 0.5s ease-in-out;
+  -webkit-transition: background-image 0.5s ease-in-out;
+  -moz-transition: background-image 0.5s ease-in-out;
+  -ms-transition: background-image 0.5s ease-in-out;
+  -o-transition: background-image 0.5s ease-in-out;
 }
 
 .hero .scroll-down {
