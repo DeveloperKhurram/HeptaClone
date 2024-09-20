@@ -54,11 +54,10 @@ AOS.init({
 
   // animsition effect
   $(".animsition").animsition({
-    inClass: "rotate-in",
-    outClass: "rotate-out",
-    // inDuration: 1500,
-    inDuration: 10,
-    outDuration: 1500,
+    inClass: "fade-in-right-sm",
+    outClass: "fade-out-right-sm",
+    inDuration: 400,
+    outDuration: 400,
     linkElement: ".animsition-link",
     // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
     loading: true,
@@ -78,5 +77,4 @@ AOS.init({
       window.location.href = url;
     },
   });
-  
 })(jQuery);
