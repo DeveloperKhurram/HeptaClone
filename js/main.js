@@ -54,7 +54,7 @@ AOS.init({
 
   // animsition effect
   $(".animsition").animsition({
-    inClass: "fade-in-right-sm",
+    inClass: "fade-in-left-sm",
     outClass: "fade-out-right-sm",
     inDuration: 400,
     outDuration: 400,
