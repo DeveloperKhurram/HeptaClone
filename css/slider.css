@@ -20,7 +20,6 @@
   width: 100%;
   height: 55rem;
   aspect-ratio: 16/9;
-
 }
 
 .carousel-item img {
@@ -69,19 +68,20 @@
 }
 
 @media (width <= 320px) {
-  .carousel-control-prev, .carousel-control-next {
+  .carousel-control-prev,
+  .carousel-control-next {
     display: none;
   }
 }
 
 .carousel-control-prev {
   position: absolute;
-  left: -2rem !important;
+  left: -1rem !important;
 }
 
 .carousel-control-next {
   position: absolute;
-  right: -2rem !important;
+  right: -1rem !important;
 }
 
 .carousel-indicators button {
@@ -106,17 +106,13 @@
 
 @media (max-width: 768px) {
   .carousel-item {
-    height: 20rem;
+    height: 26rem;
   }
+}
 
-  .carousel-caption h5 {
-    font-size: 1.5rem;
-  }
-
-  .carousel-caption p {
-    font-size: 1rem;
-
-    color: hsl(0, 100%, 50%);
+@media (max-width: 320px) {
+  .carousel-item {
+    height: 12rem;
   }
 }
 
